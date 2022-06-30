@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import { AboutMe } from '../about';
 import { Contact } from '../contact';
 import { Cabecalho } from '../header';
