@@ -23,7 +23,7 @@ code {
   height: 40px;
   border-radius: 20px;
   position: fixed;
-  left: 20px;
+  right: 20px;
   bottom: 20px;
   z-index: 999;
   cursor: pointer;

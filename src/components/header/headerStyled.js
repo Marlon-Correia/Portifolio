@@ -4,16 +4,22 @@ export const Header = styled.header`
     display: flex;
     width: 100%;
     color: ${( {theme} ) => theme.color};
+
 `;
 export const LeftSide = styled.div`
     color: ${( {theme} ) => theme.color};
     background-color: ${( {theme} ) => theme.primary};
-    width: 65%;
+    width: 60%;
     height: 100vh;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     justify-content: center;
+    @media (max-width: 768px){
+        width: 92%;
+        justify-content: flex-start;
+        padding-top:55%;
+    }
 `;
 export const AreaName = styled.div`
     display: flex;
@@ -23,13 +29,18 @@ export const AreaName = styled.div`
 `;
 export const LeftName = styled.div`
     color: #590FBF;
-    margin-left: 120px;
-    font-size:60px;
+    font-size:70px;
+    @media (min-width: 300px) and (max-width: 425px){
+        font-size: 30px;
+    }
 `;
 export const LeftJob = styled.div`
     color: ${( {theme} ) => theme.color};
-    margin-left: 128px;
-    font-size: 25px;
+    margin-left: 8px;
+    font-size: 40px;
+    @media (min-width: 300px) and (max-width: 425px){
+        font-size: 20px;
+    }
 `;
 export const LeftAbout = styled.div`
     margin-left: 120px;
@@ -40,7 +51,7 @@ export const AreaButton = styled.div`
     text-align: center;
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
     background-color: ${( {theme} ) => theme.primary};
     color:#590FBF;
     padding: 13px 35px;
@@ -49,9 +60,12 @@ export const Button = styled.button`
     font-size: 22px;
     cursor: pointer;
     transition: all ease 0.8s;
-
+    text-decoration: none;
     &:hover{
         font-size: 23px;
+    }
+    @media (min-width: 300px) and (max-width: 425px){
+        padding: 8px 20px;
     }
 `;
 
@@ -59,8 +73,9 @@ export const Button = styled.button`
 
 export const RightSide = styled.div`
     background-color: #590FBF;
-    width: 50%;
+    width: 40%;
     height: 100vh;
+    display: flex;
 `;
 export const AreaNav = styled.div`
     max-width: 85%;
@@ -70,6 +85,7 @@ export const AreaNav = styled.div`
     margin-top: 20px;
 `;
 export const ItemNav = styled.a`
+    display: none;
     color: ${( {theme} ) => theme.color};
     text-decoration: none;
     margin: 0 10px;
@@ -78,6 +94,23 @@ export const ItemNav = styled.a`
     cursor: pointer;
     &:hover{
         color: ${( {theme} ) => theme.secundary};
+    }
+    @media (min-width: 768px){
+        display: inline-block;
+    }
+`;
+export const ItemNavSwitch = styled.a`
+    color: ${( {theme} ) => theme.color};
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    &:hover{
+        color: ${( {theme} ) => theme.secundary};
+    }
+    @media (min-width: 768px){
+        display: inline-block;
     }
 `;
 export const Img = styled.div`

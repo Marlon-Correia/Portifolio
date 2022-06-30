@@ -10,16 +10,28 @@ export const Title = styled.h1`
     font-weight: 500;
     font-size: 50px;
     text-align: center;
+    @media(max-width: 660px){
+        font-size: 40px;
+    }
 `;
 export const AreaProject = styled.div`
     margin-top: 25px;
     display: flex;
     margin-bottom: 50px;
-    height: 71vh;
+    @media(max-width: 805px){
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+    
 `;
 export const SideProject = styled.div`
     width: 50%;
     text-align: center;
+    margin-bottom: 10px;
+    @media(max-width: 805px){
+        width: 80%;
+    }
 `;
 export const Project = styled.div`
     display: flex;
@@ -30,21 +42,34 @@ export const Image1 = styled.img`
     border-radius: 5px;
     width: 400px;
     height: 250px;
+    @media(max-width: 410px){
+        width: 100%;
+    }
 `;
 export const Image2 = styled.img`
     border-radius: 5px;
     width: 330px;
     height: 250px;
+    @media(max-width: 340px){
+        width: 100%;
+    }
 `;
 export const TitleProject = styled.p`
     margin-top: 10px;
     font-size: 20px;
     font-weight: 500;
+    @media(max-width: 660px){
+        font-size: 14px;
+    }
 `;
 export const InfoProject = styled.p`
     width: 72%;
     margin: auto;
     margin-top: 15px;
+    @media(max-width: 660px){
+        width: 100%;
+        font-size: 10px;
+    }
 `;
 export const LeftAbout = styled.div`
     color: #fff;

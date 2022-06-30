@@ -21,7 +21,7 @@ export const AboutMe = () => {
                         Pretendo me aperfeiçoar com o passar do tempo, é estudar mais sobre o Back-End, quando tiver uma boa base sobre o React, junto do JavaScript.
                     </C.Text>
                     <C.AreaButtons>
-                        <C.ButtonNot>Baixar Curriculo</C.ButtonNot>
+                        <C.ButtonNot>Curriculo</C.ButtonNot>
                         <C.ButtonOut>Contato</C.ButtonOut>
                     </C.AreaButtons>
                 </C.RightSide>

@@ -12,7 +12,7 @@ export const Projects = () => {
                     <C.Project>
                         <C.Image1 src={Clone} alt="" />
                         <C.TitleProject>NetFilmes</C.TitleProject>
-                        <C.InfoProject>Nesse projeto, foi criado um clone do menu de filmes da Netflix, onde foi consumida a Api do TMDB(The Movie Database), pude aprender muito na parte de requisições, é como usar os dados obtidos dela, além de usar o Styled Components, que nunca havia utilizado, as tecnologias usadas foram HTML, CSS, JavaScript, Styled Components e React  </C.InfoProject>
+                        <C.InfoProject>Nesse projeto, foi criado um clone do menu de filmes da Netflix, onde foi consumida a API do TMDB(The Movie Database), pude aprender muito na parte de requisições, é como usar os dados obtidos dela, além de usar o Styled Components, que nunca havia utilizado, as tecnologias usadas foram HTML, CSS, JavaScript, Styled Components e React  </C.InfoProject>
                     </C.Project>
                 </C.SideProject>
 

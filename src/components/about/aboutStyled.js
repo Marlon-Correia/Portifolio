@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 60vh;
     background-color: ${( {theme} ) => theme.secundary};
     color: ${( {theme} ) => theme.color};
     display: flex;
@@ -13,11 +12,17 @@ export const AreaAbout = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: 768px){
+        width: 100%;
+    }
 `;
 export const LeftSide = styled.div`
 `;
 export const Image = styled.img`
     height: 220px;
+    @media (max-width: 500px){
+        height: 150px;
+    }
 
 `;
 
@@ -27,10 +32,16 @@ export const RightSide = styled.div`
 export const Title = styled.h1`
     margin: 12px 0;
     color: #590FBF;
+    @media (max-width: 768px){
+        font-size: 20px;
+    }
 
 `;
 export const Text = styled.p`
     color: ${( {theme} ) => theme.color};
+    @media (max-width: 768px){
+        font-size: 10px;
+    }
 
 `;
 export const AreaButtons = styled.div`
@@ -44,6 +55,10 @@ const Button = styled.a`
     padding: 8px 16px;
     margin: 0px 30px;
     cursor: pointer;
+    @media (max-width: 480px){
+        padding: 4px 8px;
+        margin: 0px 10px;
+    }
 `;
 
 export const ButtonNot = styled(Button)`
