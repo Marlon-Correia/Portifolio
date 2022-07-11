@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Header = styled.header`
     display: flex;
     width: 100%;
+    height: 100vh;
     color: ${( {theme} ) => theme.color};
 
 `;
@@ -10,10 +11,9 @@ export const LeftSide = styled.div`
     color: ${( {theme} ) => theme.color};
     background-color: ${( {theme} ) => theme.primary};
     width: 60%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     @media (max-width: 768px){
         width: 92%;
@@ -29,7 +29,8 @@ export const AreaName = styled.div`
 `;
 export const LeftName = styled.div`
     color: #590FBF;
-    font-size:70px;
+    margin-top: -25px;
+    font-size:65px;
     @media (min-width: 300px) and (max-width: 425px){
         font-size: 30px;
     }
@@ -37,7 +38,7 @@ export const LeftName = styled.div`
 export const LeftJob = styled.div`
     color: ${( {theme} ) => theme.color};
     margin-left: 8px;
-    font-size: 40px;
+    font-size: 35px;
     @media (min-width: 300px) and (max-width: 425px){
         font-size: 20px;
     }
@@ -48,21 +49,22 @@ export const LeftAbout = styled.div`
     margin-bottom: 30px;
 `;
 export const AreaButton = styled.div`
-    text-align: center;
 `;
 
 export const Button = styled.a`
     background-color: ${( {theme} ) => theme.primary};
     color:#590FBF;
     padding: 13px 35px;
+    margin-right:30px;
     border: 1px solid #590FBF;
     border-radius: 5px;
     font-size: 22px;
     cursor: pointer;
-    transition: all ease 0.8s;
     text-decoration: none;
+    transition: all ease 0.5s;
     &:hover{
-        font-size: 23px;
+        background-color: #590fbf;
+        color: #000;
     }
     @media (min-width: 300px) and (max-width: 425px){
         padding: 8px 20px;
@@ -72,23 +74,35 @@ export const Button = styled.a`
 
 
 export const RightSide = styled.div`
-    background-color: #590FBF;
+background-color: ${( {theme} ) => theme.primary};
     width: 40%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
-`;
+    align-items: center;
+    `;
 export const AreaNav = styled.div`
-    max-width: 85%;
-    margin: auto;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    position: fixed;
+    padding-right: 50px;
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
+    align-items: center;
+    background-color: #590fbf;
 `;
+export const AreaPhoto = styled.div`
+    padding-left: 45px;
+`;
+export const Image = styled.img`
+    height: 250px;
+`;
+
 export const ItemNav = styled.a`
     display: none;
     color: ${( {theme} ) => theme.color};
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 20px;
     font-size: 20px;
     transition: all ease 0.5s;
     cursor: pointer;
