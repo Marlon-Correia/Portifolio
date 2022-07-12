@@ -11,10 +11,11 @@ export const LeftSide = styled.div`
     color: ${( {theme} ) => theme.color};
     background-color: ${( {theme} ) => theme.primary};
     width: 60%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     @media (max-width: 768px){
         width: 92%;
         justify-content: flex-start;
@@ -49,6 +50,7 @@ export const LeftAbout = styled.div`
     margin-bottom: 30px;
 `;
 export const AreaButton = styled.div`
+    margin-top: 20px;
 `;
 
 export const Button = styled.a`
@@ -64,7 +66,7 @@ export const Button = styled.a`
     transition: all ease 0.5s;
     &:hover{
         background-color: #590fbf;
-        color: #000;
+        color: #fff;
     }
     @media (min-width: 300px) and (max-width: 425px){
         padding: 8px 20px;
@@ -76,20 +78,19 @@ export const Button = styled.a`
 export const RightSide = styled.div`
 background-color: ${( {theme} ) => theme.primary};
     width: 40%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     `;
 export const AreaNav = styled.div`
     width: 100%;
-    height: 60px;
-    margin: 0 auto;
+    height: 50px;
     position: fixed;
-    padding-right: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background-color: #590fbf;
+    z-index: 10;
 `;
 export const AreaPhoto = styled.div`
     padding-left: 45px;
@@ -102,12 +103,13 @@ export const ItemNav = styled.a`
     display: none;
     color: ${( {theme} ) => theme.color};
     text-decoration: none;
-    margin: 0 20px;
+    margin-right:40px;
     font-size: 20px;
-    transition: all ease 0.5s;
+    transition: all ease .8s;
     cursor: pointer;
+    color: #fff;
     &:hover{
-        color: ${( {theme} ) => theme.secundary};
+        color: #000;
     }
     @media (min-width: 768px){
         display: inline-block;
@@ -135,3 +137,14 @@ export const Img = styled.div`
     margin-top: 50px;
     margin-left: -20px;
 `;
+export const GifArea = styled.div`
+
+`;
+export const Gif = styled.div`
+    background-image = url(https://pa1.narvii.com/6539/f47caf2747194bc8eaa08661e9241673e3dab3b6_hq.gif)
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+    `;

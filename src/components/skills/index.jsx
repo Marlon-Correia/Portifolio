@@ -6,12 +6,15 @@ import { SiTypescript } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
 import { TbBrandSass } from "react-icons/tb";
 import * as C from './skillsStyled'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Skills = () => {
+    AOS.init();
     return (  
         <C.Aside>
             <C.Title id='skills'>Skills</C.Title>
-            <C.SkillsLine>
+            <C.SkillsLine  data-aos="fade-right" data-aos-duration='700' >
                 <C.SkillsInfo>
                     <DiHtml5 style={{color: '#e34c26', cursor:'pointer'}} size='100px' />
                     <h3>HTML</h3>
@@ -28,7 +31,7 @@ export const Skills = () => {
                     <C.SkillsAbout>Estudei Sass a alguns meses, porém o usei muito em prática, sei os conceitos básicos.</C.SkillsAbout>
                 </C.SkillsInfo>
             </C.SkillsLine>
-            <C.SkillsLine>
+            <C.SkillsLine data-aos="fade-right" data-aos-duration='700' >
                 <C.SkillsInfo>
                     <DiJavascript style={{color: '#f0db4f', cursor:'pointer'}} size='100px' />
                     <h3>JavaScript</h3>

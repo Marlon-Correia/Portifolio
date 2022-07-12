@@ -4,6 +4,7 @@ export const Main = styled.main`
     background-color: ${( {theme} ) => theme.primary};
     color: ${( {theme} ) => theme.color};
     padding-bottom: 20px;
+    width: 100%;
 `;
 export const Title = styled.h1`
     padding-top: 40px;
@@ -16,22 +17,15 @@ export const Title = styled.h1`
 `;
 export const AreaProject = styled.div`
     margin-top: 25px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-bottom: 50px;
+    overflow: hidden;
     @media(max-width: 805px){
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 2px;
+        grid-template-columns: 1fr;
+        
     }
     
-`;
-export const SideProject = styled.div`
-    width: 50%;
-    text-align: center;
-    margin-bottom: 10px;
-    @media(max-width: 805px){
-        width: 80%;
-    }
 `;
 export const Project = styled.div`
     display: flex;

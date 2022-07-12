@@ -1,16 +1,19 @@
 import React from 'react';
 import * as C from './aboutStyled';
 import eu from './images/foto_foda.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const AboutMe = () => {
+    AOS.init();
     return (  
         <C.Container id='about'>
             <C.AreaAbout>
-                <C.LeftSide>
+                <C.LeftSide data-aos="fade-right" data-aos-duration='700'>
                     <C.Image src={eu} />
                 </C.LeftSide>
 
-                <C.RightSide>
+                <C.RightSide data-aos="fade-right" data-aos-duration='700'>
                     <C.Title>
                         Sobre mim
                     </C.Title>
