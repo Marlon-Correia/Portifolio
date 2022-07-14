@@ -10,30 +10,33 @@ export const Header = styled.header`
 export const LeftSide = styled.div`
     color: ${( {theme} ) => theme.color};
     background-color: ${( {theme} ) => theme.primary};
-    width: 60%;
+    width: 70%;
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     @media (max-width: 768px){
-        width: 92%;
-        justify-content: flex-start;
-        padding-top:55%;
+        width: 65%;
     }
 `;
 export const AreaName = styled.div`
     display: flex;
     flex-direction: column;
     color: white;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 `;
 export const LeftName = styled.div`
     color: #590FBF;
     margin-top: -25px;
     font-size:65px;
     @media (min-width: 300px) and (max-width: 425px){
-        font-size: 30px;
+        font-size: 26px;
+        margin: 0;
+    }
+    @media (min-width: 426px) and (max-width: 1023px){
+        font-size: 40px;
+        margin: 0;
     }
 `;
 export const LeftJob = styled.div`
@@ -41,7 +44,7 @@ export const LeftJob = styled.div`
     margin-left: 8px;
     font-size: 35px;
     @media (min-width: 300px) and (max-width: 425px){
-        font-size: 20px;
+        font-size: 16px;
     }
 `;
 export const LeftAbout = styled.div`
@@ -68,8 +71,11 @@ export const Button = styled.a`
         background-color: #590fbf;
         color: #fff;
     }
-    @media (min-width: 300px) and (max-width: 425px){
-        padding: 8px 20px;
+    @media (max-width: 768px){
+        padding: 6px 18px;
+        margin: 0 5px;
+        font-size: 14px;
+
     }
 `;
 
@@ -94,9 +100,15 @@ export const AreaNav = styled.div`
 `;
 export const AreaPhoto = styled.div`
     padding-left: 45px;
+    @media (max-width: 768px){
+        padding: 0;
+    }
 `;
 export const Image = styled.img`
     height: 250px;
+    @media (max-width: 768px){
+        height: 140px;
+    }
 `;
 
 export const ItemNav = styled.a`

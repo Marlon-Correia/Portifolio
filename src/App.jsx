@@ -45,7 +45,7 @@ function App() {
         <div className="App">
           <Home />
           <div className='scrollButton' onClick={UpScreen}>
-            <BsFillArrowUpCircleFill style={{ color: theme.color}} size={'35'} />
+            <BsFillArrowUpCircleFill style={{ color: '#590fbf'}} size={'35'} />
           </div>
         </div>
       </ThemeProvider>

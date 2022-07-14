@@ -14,7 +14,7 @@ export const Cabecalho = () => {
                             <C.ItemNav data-aos="fade-right" data-aos-duration='700'  href='#projects' >Projects</C.ItemNav>
                             <C.ItemNav data-aos="fade-right" data-aos-duration='700'  href='#skills'>Skills</C.ItemNav>
                             <C.ItemNav data-aos="fade-right" data-aos-duration='700'  href='#contact'>Contact</C.ItemNav>
-                    </C.AreaNav>
+                </C.AreaNav>
                 <C.LeftSide>
                     <C.AreaName data-aos="fade-right" data-aos-duration='700' >
                         <C.LeftJob>Hello, i'm</C.LeftJob>
