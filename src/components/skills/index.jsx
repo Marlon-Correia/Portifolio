@@ -22,40 +22,40 @@ export const Skills = () => {
         <C.Aside data-aos="fade-right" data-aos-duration='700' >
             <C.Title id='skills'>Skills</C.Title>
             <C.AreaIcons>
-                <a href="">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics">
                     <DiHtml5 style={iconStyle} onMouseOver={handleIcon} size='60px' />
                 </a>
-                <a href="">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS">
                     <DiCss3 style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a href="">
+                <a href="https://sass-lang.com/documentation/">
                     <TbBrandSass style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a href="">
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">
                     <DiJavascript style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a href="">
+                <a href="https://pt-br.reactjs.org/">
                     <GrReactjs style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a href="">
+                <a href="https://www.typescriptlang.org/docs/">
                     <SiTypescript style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a>
+                <a href='https://styled-components.com/'>
                     <SiStyledcomponents style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a>
+                <a href='https://vitejs.dev/'>
                     <SiVite style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a>
+                <a href='https://redux.js.org/'>
                     <SiRedux style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a>
+                <a href='https://github.com/Marlon-Correia'>
                     <AiFillGithub style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a>
+                <a  href='https://git-scm.com/'>
                     <FaGitAlt style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
-                <a>
+                <a  href='https://www.npmjs.com/'>
                     <ImNpm style={iconStyle} size='60px' onMouseOver={handleIcon} />
                 </a>
             </C.AreaIcons>
