@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Footer = styled.footer`
-    background-color:#590FBF;
+    background-color:#000000;
 `;
 export const ContTitle = styled.h1`
     color: white;
