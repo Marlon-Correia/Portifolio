@@ -23,6 +23,9 @@ export const Carousel = styled.div`
     overflow-x: hidden;
     align-items: center;
     scroll-behavior: smooth;
+    @media (min-width: 320px) and (max-width: 625px){
+        width: 70vw;
+    }
 `;
 export const AreaInfo = styled.div`
     height: 50px;
@@ -46,11 +49,19 @@ export const Item = styled.div`
     width: 200px;
     height: 150px;
     flex: none;
+    @media (min-width: 320px) and (max-width: 625px){
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        padding: 5px;
+    }
 `;
 export const Text = styled.span`
     font-size: 16px;
     font-weight: bold;
-
+    @media (min-width: 320px) and (max-width: 625px){
+        font-size: 10px;
+    }
 `;
 export const ButtonLeft = styled.button`
     display: flex;
@@ -89,5 +100,12 @@ export const ButtonRight = styled.button`
     :hover {
         background-color : #590fbf;
         border: none;
+    }
+`;
+export const Image = styled.img`
+    width: 110px;
+
+    @media (min-width: 320px) and (max-width: 625px){
+        width: 60px;
     }
 `;

@@ -6,5 +6,7 @@ export const qual = [
     {id: 5, name:'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg' },
     {id: 6, name:'Redux', logo: 'https://seeklogo.com/images/R/redux-logo-9CA6836C12-seeklogo.com.png' },
     {id: 7, name:'Styled Components', logo: 'https://avatars.githubusercontent.com/u/20658825?s=200&v=4' },
-    {id: 8, name:'Sass', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg' }
+    {id: 8, name:'Sass', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg' },
+    {id: 9, name:'Git', logo: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' }
+
 ]
